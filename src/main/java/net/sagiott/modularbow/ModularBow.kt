@@ -9,6 +9,8 @@ import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent
+import net.sagiott.modularbow.block.ModBlocks
+import net.sagiott.modularbow.item.ModItems
 import thedarkcolour.kotlinforforge.forge.MOD_CONTEXT
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -18,6 +20,10 @@ class ModularBow
     init
     {
         val modEventBus = MOD_CONTEXT.getKEventBus()
+        //Add items to event bus
+        ModItems.register(modEventBus)
+        //Add blocks to event bus
+        ModBlocks.register(modEventBus)
 
         modEventBus.addListener()
         {
@@ -25,7 +31,7 @@ class ModularBow
         }
         MinecraftForge.EVENT_BUS.register(this)
     }
-    //Push test elleh
+
     private fun commonSetup(event: FMLCommonSetupEvent)
     {
 

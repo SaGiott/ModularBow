@@ -1,0 +1,9 @@
+{
+  "variants" :
+  {
+    "" :
+    {
+      "model" : "modularbow:block/endstone_zircon_ore"
+    }
+  }
+}

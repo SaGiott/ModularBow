@@ -1,0 +1,9 @@
+{
+  "variants" :
+  {
+    "" :
+    {
+      "model" : "modularbow:block/zircon_block"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "item.modularbow.zircon" : "Zircon",
+  "item.modularbow.raw_zircon" : "Raw Zircon",
+
+  "block.modularbow.zircon_block": "Block of Zircon",
+  "block.modularbow.zircon_ore": "Zircon Ore",
+  "block.modularbow.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.modularbow.netherrack_zircon_ore" : "Netherrack Zircon Ore",
+  "block.modularbow.endstone_zircon_ore" : "Endstone Zircon Ore",
+
+  "itemGroup.modularbow" : "Modular Bow"
+}
