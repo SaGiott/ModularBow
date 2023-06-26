@@ -25,31 +25,31 @@ class ModBlocks
 
         val ZIRCON_BLOCK: RegistryObject<Block> = registerBlock(
             "zircon_block",
-            { Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops())},
+            { Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops())},
             ModCreativeModeTab.TUTORIAL_TAB
         )
 
         val ZIRCON_ORE: RegistryObject<Block> = registerBlock(
             "zircon_ore",
-            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
+            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
             ModCreativeModeTab.TUTORIAL_TAB
         )
 
         val DEEPSLATE_ZIRCON_ORE: RegistryObject<Block> = registerBlock(
             "deepslate_zircon_ore",
-            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
+            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
             ModCreativeModeTab.TUTORIAL_TAB
         )
 
         val NETHERRACK_ZIRCON_ORE: RegistryObject<Block> = registerBlock(
             "netherrack_zircon_ore",
-            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
+            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
             ModCreativeModeTab.TUTORIAL_TAB
         )
 
         val ENDSTONE_ZIRCON_ORE: RegistryObject<Block> = registerBlock(
             "endstone_zircon_ore",
-            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
+            { DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)) },
             ModCreativeModeTab.TUTORIAL_TAB
         )
 
