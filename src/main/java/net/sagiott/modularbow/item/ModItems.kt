@@ -27,7 +27,7 @@ class ModItems
         }
         add the localization in the resources/assets/modularbow/lang for every localization.json file.
         */
-        //Commento random
+
         val ZIRCON: RegistryObject<Item> = ITEMS.register("zircon") { Item(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)) }
 
         val RAW_ZIRCON: RegistryObject<Item> = ITEMS.register("raw_zircon") { Item(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)) }
