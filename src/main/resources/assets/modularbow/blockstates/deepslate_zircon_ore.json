@@ -1,8 +1,6 @@
 {
-  "variants" :
-  {
-    "" :
-    {
+  "variants" : {
+    "" : {
       "model" : "modularbow:block/deepslate_zircon_ore"
     }
   }

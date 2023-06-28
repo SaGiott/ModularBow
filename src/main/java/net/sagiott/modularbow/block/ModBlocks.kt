@@ -13,6 +13,8 @@ import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
 import net.minecraftforge.registries.RegistryObject
 import net.sagiott.modularbow.ModularBow
+import net.sagiott.modularbow.block.custom.JumpyBlock
+import net.sagiott.modularbow.block.custom.ZirconLampBlock
 import net.sagiott.modularbow.item.ModCreativeModeTab
 import net.sagiott.modularbow.item.ModItems
 import java.util.function.Supplier
@@ -53,6 +55,19 @@ class ModBlocks
             ModCreativeModeTab.TUTORIAL_TAB
         )
 
+        val JUMPY_BLOCK: RegistryObject<Block> = registerBlock(
+            "jumpy_block",
+            { JumpyBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)) },
+            ModCreativeModeTab.TUTORIAL_TAB
+        )
+
+        val ZIRCON_LAMP: RegistryObject<Block> = registerBlock(
+            "zircon_lamp",
+            { ZirconLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().lightLevel { state -> Int
+                if (state.getValue(ZirconLampBlock.LIT)) { 15 } else { 0 }
+            }) },
+            ModCreativeModeTab.TUTORIAL_TAB
+        )
 
         private fun <T : Block> registerBlock(name: String, block: Supplier<T>, tab: CreativeModeTab) : RegistryObject<T>
         {

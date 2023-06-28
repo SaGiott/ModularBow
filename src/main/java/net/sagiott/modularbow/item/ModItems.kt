@@ -1,12 +1,12 @@
 package net.sagiott.modularbow.item
 
-import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.Item
 import net.minecraftforge.eventbus.api.IEventBus
 import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
 import net.minecraftforge.registries.RegistryObject
 import net.sagiott.modularbow.ModularBow
+import net.sagiott.modularbow.item.custom.EightBallItem
 
 class ModItems
 {
@@ -31,6 +31,8 @@ class ModItems
         val ZIRCON: RegistryObject<Item> = ITEMS.register("zircon") { Item(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)) }
 
         val RAW_ZIRCON: RegistryObject<Item> = ITEMS.register("raw_zircon") { Item(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)) }
+
+        val EIGHT_BALL: RegistryObject<Item> = ITEMS.register("eight_ball") { EightBallItem(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)) }
 
         fun register(eventBus: IEventBus)
         {

@@ -1,0 +1,7 @@
+{
+  "variants":
+  {
+    "lit=true" : { "model" : "modularbow:block/zircon_lamp_on" },
+    "lit=false": { "model": "modularbow:block/zircon_lamp_off"}
+  }
+}
