@@ -10,7 +10,12 @@ class ModularBowItem(properties: Properties) : BowItem(properties)
 {
     companion object
     {
-        var BLADES: BowBlade? = null
-        val HAS_GRIP: BooleanProperty = BooleanProperty.create("has_grip")
+        var BLADES: Int = 0
+        var SIGHT: Int = 0
+        val GRIP: BooleanProperty = BooleanProperty.create("grip")
+        val STABILIZER: BooleanProperty = BooleanProperty.create("stabilizer")
+        val CLICKER: BooleanProperty = BooleanProperty.create("clicker")
+        val STRING: BooleanProperty = BooleanProperty.create("string")
+        val PULLEY: BooleanProperty = BooleanProperty.create("pulley")
     }
 }
