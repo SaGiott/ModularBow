@@ -11,6 +11,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent
 import net.sagiott.modularbow.block.ModBlocks
 import net.sagiott.modularbow.item.ModItems
+import net.sagiott.modularbow.util.ModItemProperties
 import thedarkcolour.kotlinforforge.forge.MOD_CONTEXT
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -52,7 +53,7 @@ class ModularBow
         @SubscribeEvent
         fun onClientSetup(event: FMLClientSetupEvent?)
         {
-
+            ModItemProperties.addCustomItemProperties()
         }
     }
 

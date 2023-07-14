@@ -24,7 +24,7 @@ class ModBlocks
     companion object
     {
         val BLOCKS: DeferredRegister<Block> = DeferredRegister.create(ForgeRegistries.BLOCKS, ModularBow.MOD_ID)
-
+        ///*
         val ZIRCON_BLOCK: RegistryObject<Block> = registerBlock(
             "zircon_block",
             { Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops())},
@@ -68,7 +68,7 @@ class ModBlocks
             }) },
             ModCreativeModeTab.TUTORIAL_TAB
         )
-
+        //*/
         private fun <T : Block> registerBlock(name: String, block: Supplier<T>, tab: CreativeModeTab) : RegistryObject<T>
         {
             //Register the block to BLOCKS list

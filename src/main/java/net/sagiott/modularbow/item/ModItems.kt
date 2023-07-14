@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries
 import net.minecraftforge.registries.RegistryObject
 import net.sagiott.modularbow.ModularBow
 import net.sagiott.modularbow.item.custom.EightBallItem
+import net.sagiott.modularbow.item.custom.ModularBowItem
 
 class ModItems
 {
@@ -27,13 +28,16 @@ class ModItems
         }
         add the localization in the resources/assets/modularbow/lang for every localization.json file.
         */
-        //Commento random
+
+        ///*
         val ZIRCON: RegistryObject<Item> = ITEMS.register("zircon") { Item(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)) }
 
         val RAW_ZIRCON: RegistryObject<Item> = ITEMS.register("raw_zircon") { Item(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)) }
 
         val EIGHT_BALL: RegistryObject<Item> = ITEMS.register("eight_ball") { EightBallItem(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)) }
 
+        val MODULAR_BOW: RegistryObject<Item> = ITEMS.register("modular_bow") { ModularBowItem(Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)) }
+        //*/
         fun register(eventBus: IEventBus)
         {
             ITEMS.register(eventBus)

@@ -1,0 +1,6 @@
+{
+    "parent": "modularbow:item/modular_bow",
+    "textures": {
+        "layer0": "modularbow:item/modular_bow_pulling_0"
+    }
+}
