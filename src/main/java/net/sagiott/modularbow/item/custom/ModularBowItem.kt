@@ -18,4 +18,6 @@ class ModularBowItem(properties: Properties) : BowItem(properties)
         val STRING: BooleanProperty = BooleanProperty.create("string")
         val PULLEY: BooleanProperty = BooleanProperty.create("pulley")
     }
+
+    
 }

@@ -1,0 +1,7 @@
+{
+  "variants" : {
+    "" : {
+      "model" : "modularbow:block/bow_modding_table"
+    }
+  }
+}

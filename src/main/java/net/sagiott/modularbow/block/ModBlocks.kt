@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
 import net.minecraftforge.registries.RegistryObject
 import net.sagiott.modularbow.ModularBow
+import net.sagiott.modularbow.block.custom.BowModdingTable
 import net.sagiott.modularbow.block.custom.JumpyBlock
 import net.sagiott.modularbow.block.custom.ZirconLampBlock
 import net.sagiott.modularbow.item.ModCreativeModeTab
@@ -66,6 +67,12 @@ class ModBlocks
             { ZirconLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().lightLevel { state -> Int
                 if (state.getValue(ZirconLampBlock.LIT)) { 15 } else { 0 }
             }) },
+            ModCreativeModeTab.TUTORIAL_TAB
+        )
+
+        val BOW_MODDING_TABLE: RegistryObject<Block> = registerBlock(
+            "bow_modding_table",
+            { BowModdingTable(BlockBehaviour.Properties.of(Material.WOOD).strength(2f)) },
             ModCreativeModeTab.TUTORIAL_TAB
         )
         //*/
